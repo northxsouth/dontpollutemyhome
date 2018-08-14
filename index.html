@@ -9,11 +9,15 @@ layout: home
       <div class="application-card card status-{{ application.status }}">
         <div class="card-body">
           <h5 class="mb-0 text-center">
-            <a href="{{ application.link }}">{{ application.name }}</a>
+            {% if application.link %}
+              <a href="{{ application.link }}">{{ application.name }}</a>
+            {% else %}
+              {{ application.name }}
+            {% endif %}
           </h5>
-          {% if application.notes %}
+          <!-- {% if application.notes %}
             <small class="card-text small text-muted">{{ application.notes }}</small>
-          {% endif %}
+          {% endif %} -->
         </div>
       </div>
     </div>

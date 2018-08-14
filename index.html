@@ -1,0 +1,21 @@
+---
+layout: home
+---
+
+<div class="row">
+  {% for app_hash in site.data.applications %}
+    {% assign application = app_hash[1] %}
+    <div class="col-3 col-xs-6">
+      <div class="application-card card status-{{ application.status }}">
+        <div class="card-body">
+          <h5 class="mb-0 text-center">
+            <a href="{{ application.link }}">{{ application.name }}</a>
+          </h5>
+          {% if application.notes %}
+            <small class="card-text small text-muted">{{ application.notes }}</small>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,11 @@
+.application-card.status-reported {
+  border-color: var(--info);
+}
+
+.application-card.status-supported {
+  border-color: var(--success);
+}
+
+.application-card.status-wontfix {
+  border-color: var(--danger);
+}

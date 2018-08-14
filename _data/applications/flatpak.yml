@@ -1,0 +1,5 @@
+name: flatpak
+dir_name: var
+link: https://github.com/flatpak/flatpak.github.io/issues/191
+status: wontfix
+

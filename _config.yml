@@ -1,0 +1,13 @@
+title: Don't Pollute My $HOME
+description: >-
+  Applications which don't follow the XDG environment spec on Linux operating systems
+
+baseurl: ""
+url: "https://dontpollutemyhome.directory"
+
+github_url: https://github.com/northxsouth/dontpullutemyhome
+
+markdown: kramdown
+
+plugins:
+ - jekyll-seo-tag
